@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function showTable() {
+        var rows = $("#rows").val();
+        var columns = $("#columns").val();
+        $.ajax({
+          type: "POST",
+          url: "table.php",
+          data: { rows: rows, columns: columns },
+          success: function(result) {
+            $("#table").html(result);
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      Rows: <input type="text" id="rows" /><br><br>
+      Columns: <input type="text" id="columns" /><br><br>
+      <input type="button" value="Show Table" onclick="showTable()" />
+    </form>
+    <div id="table"></div>
+  </body>
+</html>

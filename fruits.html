@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>
+        Fruits
+    </title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: monospace;
+        }
+         select{
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding: 10px;
+            border: 0px solid rgb(0, 0, 0);
+            outline: none;
+            font-size: larger;
+        }
+        input[type=submit]{
+            background-color:black ;
+            color:white ;
+           padding: 10px;
+        }
+        input[type=submit]:hover{
+            scale: 1.1;
+            border-radius: 10px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fruits</h1>
+    <form action="Fruits.php" method="POST">
+        Choose any fruit
+        <select name="fruits">
+            <option value="Mango">Mango</option>
+            <option value="Grape">Grape</option>
+            <option value="Banana">Banana</option>
+            <option value="Chicku">Chicku</option>
+            <option value="Apple">Apple</option>
+            <option value="Orange">Orange</option>
+            <option value="Pine">Pine Apple</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="SELECT">
+    </form>
+</body>
+
+</html>

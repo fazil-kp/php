@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color:#F0E9D2;
+            display: flex;
+            font-family: sans-serif;
+            align-items: center;
+            justify-content: center;
+        }
+        select{
+            border-radius: 5px;
+            background-color: white;
+            border: none;
+            padding:10px;
+            font-size: larger;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+        }
+        input{
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding: 10px;
+            border: 0px solid rgb(0, 0, 0);
+            outline: none;
+            
+            font-size: larger;
+        }
+        input[type=submit]{
+            background-color:black ;
+            color:white ;
+            border-radius: 0 10px 0 10px;
+        }
+        h2,h3{
+            font-family: monospace;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <form action="array.php" method=get>
+        <h3> select some Fruits names to create an array</h3>
+        <select name="fruits[]"size="15" multiple>
+            <option value=Apple selected> Apple</option>
+            <option value=Banana> Banana</option>
+            <option value=Grapes >Grapes</option>
+            <option value=cherry>Cherry</option>
+            <option value=Bean>Bean</option>
+            <option value=pea> Pea</option>
+            <option value=coconut> Coconut</option>
+            <option value=raspberry>Raspberry</option>
+            <option value=breadfruit> Breadfruit</option>
+            <option value=pineapple> Pineapple</option>
+        </select>
+        <h3> select any operation</h3>
+        <select name=select >
+            <option value=display >Display array</option>
+            <option value=sort >Sort array</option>
+            <option value=duplicate > Remove duplicate</option>
+            <option value=last >Remove last element</option>
+            <option value=rsort>Reverse sort</option>
+            <option value=search >Search element</option> 
+        </select>
+        <br><br><br>
+        for search operation enter the value to be searched: <input type=text name="key"><br><br><br>
+        <input type=submit name=submit value = "Submit Your Array" >
+    </form>
+</body>
+</html>
+
+
+
+
